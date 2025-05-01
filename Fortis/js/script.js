@@ -95,12 +95,6 @@ document.querySelector("#shopping-cart-button").onclick = (e) => {
   e.preventDefault();
 };
 
-// Close cart when clicking the close button
-document.querySelector(".shopping-cart .close-btn").onclick = (e) => {
-  shoppingCart.classList.remove("active");
-  e.preventDefault();
-};
-
 // Update cart display
 function updateCart() {
   cartItemsContainer.innerHTML = '';
@@ -249,11 +243,6 @@ if (contactForm) {
   });
 }
 
-// Prevent cart from closing when clicking inside
-shoppingCart.addEventListener('click', function(e) {
-  e.stopPropagation();
-});
-
 // Click outside elements
 document.addEventListener("click", function (e) {
   const menu = document.querySelector("#menu-toggle");
@@ -269,6 +258,11 @@ document.addEventListener("click", function (e) {
   if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
     shoppingCart.classList.remove("active");
   }
+});
+
+// Prevent cart from closing when clicking inside
+shoppingCart.addEventListener('click', function(e) {
+  e.stopPropagation();
 });
 
 // Initialize Feather Icons
