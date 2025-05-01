@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fortis</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet" /> 
+    
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart-styles.css" />
+
+    <!-- AlpineJs-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body>
+    <!-- <Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Fortis</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Packaging</a>
+        <a href="#products">Produk</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="menu-toggle"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- search Form Start -->
+       <div class="search-form">
+          <input type="search" id="search-box" placeholder="search here...">
+          <label for="search-box"><i data-feather="search"></i></label>
+       </div>
+      <!-- search Form end -->
+    <!-- Shopping Cart start -->
+    <div class="shopping-cart">
+      <button class="close-btn" aria-label="Close cart">
+        <i data-feather="x"></i>
+      </button>
+      <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div class="cart-total">Total : Rp 0</div>
+      <div class="customer-form">
+        <h3>Customer Detail</h3>
+        <div class="form-group">
+          <input type="text" id="cart-name" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="cart-email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="cart-phone" placeholder="Phone" required>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+      <!-- Shopping Cart end -->
+    </nav>
+    <!-- <Navbar end -->
+
+    <!--Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>
+          Build For Man <br />
+          <span>Made to last</span>
+        </h1>
+        <p>Dibuat dengan sentuhan DIY, dirancang untuk ketahanan</p>
+<a href="#menu" class="cta" aria-label="Menu Packaging Section">Beli Sekarang</a>
+      </main>
+    </section>
+
+    <!--Hero Section end -->
+
+    <!--About Section start -->
+    <section id="about" class="about">
+      <h2>Tentang Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/Desain_tanpa_judul__6_-removebg-preview.png" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Latar Belakang Fortis</h3>
+          <p>
+            Fortis menghadirkan gelang DIY yang mengutamakan ketahanan tinggi. Dibuat dengan wax leather thread yang elastis dan dilapisi dua lapisan pelindung terhadap air.
+          </p>
+          <p>
+            Dengan material tersebut, Fortis berkomitmen untuk mengubah pandangan masyarakat terhadap kualitas produk DIY, sekaligus memberikan sentuhan maskulin bagi setiap penggunanya.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--About Section end -->
+
+    <!--Menu Section start -->
+    <section id="menu" class="menu">
+      <h2>Packaging Kami</h2>
+      <p>
+        Berikut adalah bagian dari packaging fortis yang kami sediakan
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/Menu/Packaging 1.jpg" alt="Paket A" class="menu-card-img" />
+          <h3 class="menu-card-title">-Tampak Luar-</h3>
+          
+        </div>
+        <div class="menu-card">
+          <img src="img/Menu/Packaging 2.jpg" alt="Paket B" class="menu-card-img" />
+          <h3 class="menu-card-title">-Tampak dalam-</h3>
+         
+        </div>
+        <div class="menu-card">
+          <img src="img/Menu/Packaging 3.jpg" alt="Paket C" class="menu-card-img" />
+          <h3 class="menu-card-title">-Bersama Gelang-</h3>
+          
+        </div>
+        
+        </div>
+        
+    </section>
+    <!-- Menu Section end -->
+ <!-- Products Section start -->
+<section class="products" id="products">
+  <h2><span>Produk Unggulan Kami</span></h2>
+  <p>Kami Menawarkan beberapa paket Varian dari kami yaitu ada Paket A, B, C dan D</p>
+  <div class="row">
+    <div class="product-card">
+      <div class="product-icons">
+        <a href="#" class="add-to-cart" 
+           data-id="PaketA" 
+           data-name="Paket A" 
+           data-price="30000" 
+           data-img="img/products/Gelang pertama.jpg">
+           <i data-feather="shopping-cart"></i>
+        </a>
+      </div>
+      <div class="product-image">
+        <img src="img/products/Gelang pertama.jpg" alt="Paket A">
+      </div>
+      <div class="product-content">
+        <h3>Paket A</h3>
+      </div>
+      <div class="product-price">IDR 30K <span>IDR 35k</span></div>
+    </div>
+    
+    <div class="product-card">
+      <div class="product-icons">
+        <a href="#" class="add-to-cart"
+           data-id="PaketB"
+           data-name="Paket B"
+           data-price="30000"
+           data-img="img/products/Gelang kedua.jpg">
+           <i data-feather="shopping-cart"></i>
+        </a>
+      </div>
+      <div class="product-image">
+        <img src="img/products/Gelang kedua.jpg" alt="Paket B">
+      </div>
+      <div class="product-content">
+        <h3>Paket B</h3>
+      </div>
+      <div class="product-price">IDR 30K <span>IDR 35k</span></div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-icons">
+        <a href="#" class="add-to-cart"
+           data-id="PaketC"
+           data-name="Paket C"
+           data-price="30000"
+           data-img="img/products/gelang ketiga.jpg">
+           <i data-feather="shopping-cart"></i>
+        </a>
+      </div>
+      <div class="product-image">
+        <img src="img/products/gelang ketiga.jpg" alt="Paket C">
+      </div>
+      <div class="product-content">
+        <h3>Paket C</h3>
+      </div>
+      <div class="product-price">IDR 30K <span>IDR 35k</span></div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-icons">
+        <a href="#" class="add-to-cart"
+           data-id="PaketD"
+           data-name="Paket D"
+           data-price="30000"
+           data-img="img/products/gelang keempat.jpg">
+           <i data-feather="shopping-cart"></i>
+        </a>
+      </div>
+      <div class="product-image">
+        <img src="img/products/gelang keempat.jpg" alt="Paket D">
+      </div>
+      <div class="product-content">
+        <h3>Paket D</h3>
+      </div>
+      <div class="product-price">IDR 30K <span>IDR 35k</span></div>
+    </div>
+  </div>
+</section>
+ <!-- Products Section end -->
+    <!--Contact Section start -->
+
+    <section id="contact" class="contact">
+      <h2>Kontak Kami</h2>
+      <p>
+        Punya pertanyaan atau ingin tahu lebih lanjut tentang koleksi gelang pria kami? Jangan ragu untuk menghubungi kami!
+      </p>
+
+      <!-- Kotak komentar di bawah tulisan Kontak Kami -->
+      <div class="comment-box">
+        <a href="https://forms.gle/gD85mi3ZjeqkWWW86" target="_blank" class="comment-link">Beri Komentar Fortis</a>
+      </div>
+
+      <div class="row">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253866.20619311824!2d106.48522005855143!3d-6.176320824113829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f8e853d2e38d%3A0x301576d14feb9c0!2sTangerang%2C%20Kota%20Tangerang%2C%20Banten!5e0!3m2!1sid!2sid!4v1740346792575!5m2!1sid!2sid"  
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+<form id="contact-form" action="">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="Nama" />
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" placeholder="Email" />
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="No hp" />
+        </div>
+        <button type="submit" class="btn">Kirim Pesan</button>
+       </form>
+  </div>
+    </section>
+    <!--Contact Section end-> -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+    
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Packaging</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="credits">
+        <p>created by <a href="">ElvinFernando</a>. | &copy;2025.</p>
+        </p>
+    </footer>
+    <!-- Footer end -->
+    
+    
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
