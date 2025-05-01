@@ -40,6 +40,32 @@
   top: 100px;
 }
 
+/* Close button styles */
+.shopping-cart .close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #f5f5f5;
+  border: none;
+  color: #666;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1000;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.shopping-cart .close-btn:hover {
+  color: #333;
+}
+
 /* Ensure all text elements don't get truncated */
 .shopping-cart * {
   overflow-wrap: break-word;
@@ -190,32 +216,6 @@
 }
 
 /* Mobile Responsive Styles */
-/* Close button styles */
-.shopping-cart .close-btn {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  background: #f5f5f5;
-  border: none;
-  color: #666;
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 0.5rem;
-  z-index: 1000;
-  display: none;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-
-.shopping-cart .close-btn:hover {
-  color: #333;
-}
-
 @media only screen and (max-width: 768px) {
   .shopping-cart {
     width: 100%;
@@ -235,11 +235,11 @@
   }
 
   .shopping-cart .close-btn {
-    display: block;
+    display: flex;
   }
 
   .shopping-cart .cart-items {
-    max-height: calc(90vh - 250px);
+    max-height: calc(75vh - 250px);
   }
 
   .shopping-cart .cart-item {
